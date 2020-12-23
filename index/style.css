@@ -11,6 +11,7 @@ body
     margin-right:50px;
     margin-top:40px;
     padding-bottom:50px;
+    height:auto;
 
 
 }
@@ -51,6 +52,7 @@ a:hover{
     margin-right:25px;
     margin-top:auto;
     margin-bottom:auto;
+    
 }
 
 .navig a
@@ -354,8 +356,11 @@ height:120px;
 #left{
 
 display:flex;
+flex-direction:row;
 flex-wrap:wrap;
-width:1100px;
+width:1200px;
+
+
 height:800px;
 align-items:center;
 text-align:center;
@@ -372,6 +377,7 @@ height:300px;
 margin-left:50px;
 padding:5px;
 border-radius:15px;
+
 
 
 }
@@ -490,7 +496,7 @@ color:#DFE3E7;
 display:flex;
 
 width:100%;
-height:700px;
+height:auto;
 
 margin-top:100px;
 flex-wrap:wrap;
@@ -547,7 +553,7 @@ margin-right:50px;
 {
 border:5px double #DFE3E7;
 height:250px;
-margin-bottom:20px;
+margin-bottom:25px;
 border-radius:15px;
 
 
@@ -584,13 +590,11 @@ align-items:center;
 }
 
 
-footer
+.footer
 {
 display:flex;
 flex-direction:row;
 width:100%;
-
-margin-top:50px;
 background:#DFE3E7;
 
 
@@ -603,7 +607,7 @@ display:flex;
 flex-direction:column;
 margin-left:200px;
 line-height:40px;
-justify-items:left;
+
 padding-top:20px;
 padding-bottom:20px;
 
@@ -611,3 +615,113 @@ padding-bottom:20px;
 
 
 
+@media screen and (min-width: 200px) and (max-width: 640px) 
+{
+.filtres{
+flex-direction:row;
+flex-wrap:wrap;
+margin-left:20px;
+
+}
+.filtres p{
+width:100%;
+font-weight:bold;
+
+}
+.categorie
+{
+
+margin-left:10px;
+
+}
+.container
+{
+
+flex-direction:column-reverse;
+}
+
+
+#left
+{
+
+flex-direction:column;
+flex-wrap:nowrap;
+width:500px;
+padding-right:40px;
+height:2300px;;
+margin-top:50px;
+}
+.logement
+{
+margin-top:50px;
+width:500px;
+
+}
+
+
+.photo
+{
+width:500px;  
+height:150px; 
+}
+
+
+.medium
+{
+height:250px;
+width:500px;
+margin-left:0px;
+margin-bottom:25px;
+
+
+
+}
+
+.small
+{
+    width:5200px;
+margin-left:0px;
+margin-bottom:25px;
+
+
+}
+
+.photo-small
+{
+
+    width:500px;;
+
+
+}
+.photo-medium
+{
+height:200px;
+width:100%;
+}
+
+.footer
+
+{
+
+flex-direction:column;
+height:auto;
+
+
+width:auto;
+
+
+}
+.propos , .hebergements , .assistance
+
+{
+    display:flex;
+    flex-direction:column;
+    margin-left:50px;
+    line-height:40px;
+   
+    padding-top:20px;
+    padding-bottom:20px;
+
+
+}
+}
