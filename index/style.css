@@ -11,6 +11,7 @@ body
     margin-right:50px;
     margin-top:40px;
     padding-bottom:50px;
+    height:auto;
 
 
 }
@@ -51,6 +52,7 @@ a:hover{
     margin-right:25px;
     margin-top:auto;
     margin-bottom:auto;
+    
 }
 
 .navig a
@@ -127,7 +129,7 @@ a:hover{
 }
 
 
-button
+.search-desktop
 {
     font-size:20px;
     background-color:#0065FC;
@@ -144,6 +146,30 @@ button
     
     
 }
+
+
+
+.search-mobile
+
+{
+    display:none;
+    font-size:20px;
+    background-color:#0065FC;
+    border-radius:15px;
+    padding-top:14.5px;
+    padding-bottom:14.5px;
+    border:none;
+    width:60px;
+    
+    color:white;
+    
+    margin-left:180px;
+    position:absolute;
+    margin-top:-50px;
+
+
+}
+
 
 input[type=text]
 
@@ -354,8 +380,11 @@ height:120px;
 #left{
 
 display:flex;
+flex-direction:row;
 flex-wrap:wrap;
-width:1100px;
+width:1200px;
+
+
 height:800px;
 align-items:center;
 text-align:center;
@@ -372,6 +401,7 @@ height:300px;
 margin-left:50px;
 padding:5px;
 border-radius:15px;
+
 
 
 }
@@ -488,10 +518,9 @@ color:#DFE3E7;
 #activité
 {
 display:flex;
-
+margin-left:25px;
 width:100%;
-height:700px;
-
+height:auto;
 margin-top:100px;
 flex-wrap:wrap;
 
@@ -506,7 +535,7 @@ flex-wrap:wrap;
 .act
 {
 width:100%;
-
+margin-left:25px;
 height:50px;
 
 
@@ -519,7 +548,7 @@ height:50px;
 {
 display:flex;
 flex-direction:column;
-margin-left:50px;
+margin-right:50px;
 border:5px double #DFE3E7;
 height:530px;
 border-radius:15px;
@@ -535,7 +564,6 @@ display:flex;
 flex-direction:column;
 border-radius:15px;
 height:600px;
-margin-left:50px;
 margin-right:50px;
 
 
@@ -547,7 +575,7 @@ margin-right:50px;
 {
 border:5px double #DFE3E7;
 height:250px;
-margin-bottom:20px;
+margin-bottom:25px;
 border-radius:15px;
 
 
@@ -584,14 +612,14 @@ align-items:center;
 }
 
 
-footer
+.footer
 {
 display:flex;
 flex-direction:row;
-width:100%;
-
-margin-top:50px;
+width:1750px;
 background:#DFE3E7;
+margin-left:25px;
+
 
 
 }
@@ -603,7 +631,7 @@ display:flex;
 flex-direction:column;
 margin-left:200px;
 line-height:40px;
-justify-items:left;
+
 padding-top:20px;
 padding-bottom:20px;
 
@@ -611,3 +639,160 @@ padding-bottom:20px;
 
 
 
+@media screen and (min-width: 200px) and (max-width: 640px){
+
+
+
+
+
+
+    .search-container
+    {
+       
+        display:flex;
+        margin-top:40px;
+        flex-direction:row;
+        border:1px black solid;
+        width:290px;
+        align-items:center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius:15px;
+        border-top-right-radius:15px;
+        border-bottom-right-radius:15px;
+        height:50px;
+        border-color:grey;
+        
+    
+    
+    }
+
+.search-desktop
+{
+
+display:none;
+
+
+}
+
+
+.search-mobile
+
+{
+    display:block;
+}
+
+
+
+
+
+.filtres{
+flex-direction:row;
+flex-wrap:wrap;
+margin-left:25px;
+
+}
+.filtres p{
+width:100%;
+font-weight:bold;
+
+}
+.categorie
+{
+
+margin-left:10px;
+
+}
+.container
+{
+
+flex-direction:column-reverse;
+}
+
+
+#left
+{
+
+flex-direction:column;
+flex-wrap:nowrap;
+width:500px;
+padding-right:40px;
+height:2300px;;
+margin-top:50px;
+background:white;
+}
+.logement
+{
+margin-top:50px;
+width:500px;
+border:1px solid grey;
+
+}
+
+
+.photo
+{
+width:500px;  
+height:150px; 
+}
+
+
+.medium
+{
+height:250px;
+width:500px;
+
+margin-bottom:25px;
+
+
+
+}
+
+.small
+{
+    width:520px;
+
+margin-bottom:25px;
+
+
+}
+
+.photo-small
+{
+
+    width:499px;
+    
+
+
+}
+.photo-medium
+{
+height:200px;
+width:100%;
+}
+
+.footer
+
+{
+
+flex-direction:column;
+height:auto;
+
+
+width:100%;
+
+
+}
+.propos , .hebergements , .assistance
+
+{
+    display:flex;
+    flex-direction:column;
+    margin-left:50px;
+    line-height:40px;
+   
+    padding-top:20px;
+    padding-bottom:20px;
+
+
+}
+}
