@@ -774,6 +774,21 @@ justify-content:left;
 margin-left:25px;
 padding-right:40px;
 }
+
+
+.affichage
+{
+    text-decoration:none;
+    margin-left:75px;
+    width:100%;
+    text-align:left;
+    font-weight:bold;
+    font-family: 'Raleway', sans-serif;
+    font-size:25px;
+    margin-top:50px;
+}
+
+
 .logement
 {
 margin-top:50px;
@@ -987,6 +1002,19 @@ height:auto;
 line-height:5px;
 margin-top:10px;
 padding-bottom:20px;
+}
+
+
+.affichage
+{
+    text-decoration:none;
+    margin-left:75px;
+    width:100%;
+    text-align:left;
+    font-weight:bold;
+    font-family: 'Raleway', sans-serif;
+    font-size:25px;
+    margin-top:50px;
 }
 
 .logement
