@@ -9,7 +9,6 @@ body
     font-family: 'Raleway', sans-serif;
     margin-left:50px;
     margin-right:50px;
-    margin-top:40px;
     padding-bottom:50px;
     height:auto;
 
@@ -80,6 +79,13 @@ a:hover{
 .inscription:hover{
     text-decoration-line: overline;
     font-size:25px;
+
+}
+
+.slogan
+{
+
+line-height:15px;
 
 }
 
@@ -200,7 +206,7 @@ input[type=text]
     
     justify-content:left;
     font-size:20px;
-    font-style:bold;
+    
     margin-bottom:20px;
     
 }
@@ -368,6 +374,7 @@ flex-direction:row;
 {
 
 width:300px;
+object-fit:cover;
 
 border-top-left-radius:15px;
 border-top-right-radius:15px;
@@ -383,13 +390,12 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 width:1200px;
-
-
-height:800px;
+height:900px;
 align-items:center;
 text-align:center;
 background:#DFE3E7;
 border-radius:15px;
+padding-bottom:100px;
 }
 
 .logement
@@ -398,9 +404,10 @@ border-radius:15px;
 background:white;
 width:300px;
 height:300px;
-margin-left:50px;
+margin-left:65px;
 padding:5px;
 border-radius:15px;
+box-shadow: 10px 10px 5px #656565;
 
 
 
@@ -408,7 +415,7 @@ border-radius:15px;
 
 .titre
 {
-margin-left:50px;
+margin-left:75px;
 width:100%;
 text-align:left;
 
@@ -418,6 +425,30 @@ text-align:left;
 
 
 
+.affichage
+{
+    text-decoration:none;
+    margin-left:75px;
+    width:100%;
+    text-align:left;
+    font-weight:bold;
+    font-family: 'Raleway', sans-serif;
+    font-size:25px;
+}
+
+.affichage:hover
+{
+font-size:25px;
+text-decoration-line:overline;
+
+}
+
+.titre_pop
+{
+margin-left:50px;
+
+
+}
 
 
 #right
@@ -426,13 +457,14 @@ text-align:left;
     display:flex;;
     flex-direction:row;
     flex-wrap:wrap;
-    border:1px solid black; 
+    
     justify-items:center;
     align-items:center;
     margin-right:25px;
+    
     margin-left:auto;
-    width:500px;
-    height:800px;
+    width:480px;
+    height:1000px;
     background:#DFE3E7;
     border-radius:15px;
     padding-left:15px;
@@ -449,15 +481,14 @@ text-align:left;
 {
 
 background:white;
-width:500px;
+width:450px;
 height:200px;
-font-style:medium;
-border:1px solid black;
+box-shadow: 10px 10px 5px #656565;
 border-radius:15px;
 flex-direction:row;
 display:flex;
 line-height:20px;
-
+margin-left:20px;
 
 
 
@@ -480,6 +511,7 @@ line-height:20px;
     float:left;
     padding-top:10px;
     padding-bottom:10px;
+    object-fit:cover;
   
 
     
@@ -518,11 +550,11 @@ color:#DFE3E7;
 #activité
 {
 display:flex;
-margin-left:25px;
 width:100%;
 height:auto;
 margin-top:100px;
 flex-wrap:wrap;
+
 
 
 
@@ -548,11 +580,11 @@ height:50px;
 {
 display:flex;
 flex-direction:column;
-margin-right:50px;
-border:5px double #DFE3E7;
-height:530px;
+
+height:580px;
 border-radius:15px;
 
+box-shadow: 10px 10px 5px #656565;
 
 
 }
@@ -560,11 +592,14 @@ border-radius:15px;
 .small
 
 {
+
 display:flex;
 flex-direction:column;
 border-radius:15px;
 height:600px;
-margin-right:50px;
+padding-left:35px;
+padding-right:35px;
+
 
 
 
@@ -573,29 +608,32 @@ margin-right:50px;
 
 .small-container
 {
-border:5px double #DFE3E7;
+box-shadow: 10px 10px 5px #656565;
 height:250px;
 margin-bottom:25px;
 border-radius:15px;
+padding-bottom:20px;
 
 
 }
 
 .photo-medium
 {
-width:350px;
+width:360px;
 height:500px;
 border-top-left-radius:15px;
 border-top-right-radius:15px;
+object-fit:cover;
 
 }
 
 .photo-small
 {
-width:350px;
+width:471px;
 height:200px;
 border-top-left-radius:15px;
 border-top-right-radius:15px;
+object-fit:cover;
 
 
 }
@@ -616,9 +654,10 @@ align-items:center;
 {
 display:flex;
 flex-direction:row;
-width:1750px;
+width:100%;
 background:#DFE3E7;
-margin-left:25px;
+margin-top:50px;
+
 
 
 
@@ -629,9 +668,8 @@ margin-left:25px;
 {
 display:flex;
 flex-direction:column;
-margin-left:200px;
+margin-left:250px;
 line-height:40px;
-
 padding-top:20px;
 padding-bottom:20px;
 
@@ -639,11 +677,228 @@ padding-bottom:20px;
 
 
 
-@media screen and (min-width: 200px) and (max-width: 640px){
+@media screen and (min-width: 200px) and (max-width: 980px){
 
 
 
 
+
+
+    .search-container
+    {
+       
+        display:flex;
+        margin-top:40px;
+        flex-direction:row;
+        border:1px black solid;
+        width:290px;
+        align-items:center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius:15px;
+        border-top-right-radius:15px;
+        border-bottom-right-radius:15px;
+        height:50px;
+        border-color:grey;
+        
+    
+    
+    }
+
+.search-desktop
+{
+
+display:none;
+
+
+}
+
+
+.search-mobile
+
+{
+    display:block;
+}
+
+
+
+
+
+.filtres{
+flex-direction:row;
+flex-wrap:wrap;
+margin-left:25px;
+
+}
+.filtres p{
+width:100%;
+font-weight:bold;
+
+}
+.categorie
+{
+
+margin-left:10px;
+
+}
+.container
+{
+
+flex-direction:column-reverse;
+justify-content:left;
+}
+
+
+#left
+{
+
+flex-direction:column;
+flex-wrap:wrap;
+width:auto;
+padding-right:40px;
+height:auto;
+margin-top:50px;
+background:white;
+
+margin-right:auto;
+}
+
+
+#right
+{
+
+
+width:500px;
+height:auto;
+flex-direction:column;
+justify-content:left;
+margin-left:25px;
+padding-right:40px;
+}
+.logement
+{
+margin-top:50px;
+width:500px;
+border:1px solid grey;
+margin-left:25px;
+
+}
+
+
+.logement-pop
+{
+margin-bottom:25px;
+
+
+}
+
+.photo
+{
+width:500px;  
+height:150px; 
+}
+
+
+
+
+
+#activité
+{
+display:flex;
+width:auto;
+height:auto;
+margin-top:100px;
+flex-wrap:wrap;
+margin-left:25px;
+justify-content:left;
+
+
+
+
+
+}
+
+
+
+.medium
+{
+height:250px;
+width:530px;
+margin-left:25px;
+margin-right:auto;
+margin-bottom:25px;
+
+
+
+}
+
+.small
+{
+    width:530px;
+margin-left:25px;
+margin-bottom:25px;
+padding-left:0px;
+padding-right:0px;
+justify-content:left;
+
+
+
+}
+
+.photo-small
+{
+width:100%
+    
+    
+    
+
+
+}
+.photo-medium
+{
+height:200px;
+width:100%;
+
+}
+
+.footer
+
+{
+
+flex-direction:column;
+height:auto;
+width:100%;
+
+
+}
+.propos , .hebergements , .assistance
+
+{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    line-height:40px;
+    margin-left:0;
+    padding-top:20px;
+    padding-bottom:20px;
+
+
+}
+
+.slogan
+{
+
+line-height:30px;
+
+}
+
+}
+
+
+
+/*tablette*/
+@media only screen and (min-width: 980px) and (max-width: 1800px) 
+{
+    
 
 
     .search-container
@@ -712,82 +967,170 @@ flex-direction:column-reverse;
 #left
 {
 
-flex-direction:column;
-flex-wrap:nowrap;
-width:500px;
+flex-direction:row;
+
+width:100%;
 padding-right:40px;
-height:2300px;;
+height:auto;
 margin-top:50px;
 background:white;
 }
+
+
+#right
+{
+flex-direction:row;
+margin-right:none;
+margin-left:15px;
+width:auto;
+height:auto;
+line-height:5px;
+margin-top:10px;
+padding-bottom:20px;
+}
+
 .logement
 {
 margin-top:50px;
-width:500px;
+width:465px;
 border:1px solid grey;
+line-height:5px;
+margin-left:40px;
 
 }
 
+.logement-pop
+{
+padding-top:-5px;
+margin-top:10px;
+padding-right:30px;
 
+
+}
+
+.titre
+{
+margin-bottom:-5px;
+margin-left:25px;
+
+}
+
+.titre_pop
+{
+width:100%;
+margin-left:5px;
+
+
+}
 .photo
 {
-width:500px;  
+width:100%;  
 height:150px; 
 }
 
 
 .medium
-{
-height:250px;
-width:500px;
 
-margin-bottom:25px;
+{
+display:flex;
+flex-direction:column;
+height:auto;
+border-radius:15px;
+box-shadow: 10px 10px 5px #656565;
+margin-left:40px;
+margin-top:25px;
+
 
 
 
 }
+
+#activité
+{
+display:flex;
+flex-direction:row;
+width:100%;
+height:auto;
+margin-top:20px;
+flex-wrap:wrap;
+
+
+
+}
+
+.act
+{
+width:100%;
+margin-left:25px;
+height:50px;
+
+
+}
+
+
+
+
 
 .small
-{
-    width:520px;
 
-margin-bottom:25px;
+{
+
+display:flex;
+flex-direction:row;
+border-radius:15px;
+height:auto;
+padding-left:25px;
+padding-right:25px;
+width:auto;
+margin-top:25px;
+
+
 
 
 }
+
+
+.small-container
+{
+box-shadow: 10px 10px 5px #656565;
+height:250px;
+margin-bottom:25px;
+border-radius:15px;
+padding-bottom:20px;
+width:470px;
+margin-right:25px;
+}
+
 
 .photo-small
 {
 
-    width:499px;
+width:100%;
     
-
-
 }
 .photo-medium
 {
 height:200px;
-width:100%;
+width:500px;
 }
 
 .footer
-
 {
-
-flex-direction:column;
-height:auto;
-
-
+display:flex;
+flex-direction:row;
 width:100%;
-
+background:#DFE3E7;
+margin-top:50px;
 
 }
+
+
 .propos , .hebergements , .assistance
 
 {
     display:flex;
     flex-direction:column;
-    margin-left:50px;
+    margin-left:250px;
     line-height:40px;
    
     padding-top:20px;
@@ -795,4 +1138,21 @@ width:100%;
 
 
 }
+
+.slogan
+{
+
+line-height:30px;
+
 }
+
+
+
+
+
+
+
+
+
+    }
+    
