@@ -2,14 +2,14 @@
 
 body
 {
-
+    padding-top:50px;
     background-color:white;
     font-size:18px;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     height:100%;
     width:100%;
-    margin:0;
+    
     
     
 
@@ -32,10 +32,11 @@ flex-direction:row;
 
 .logo
 {
-object-fit:fill;
-width:100px;
-height:min-content;
-align-self:flex-start
+object-fit:contain;
+width:120px;
+margin-left:12px;
+align-self:flex-start;
+
 }
 
 .conteneur
@@ -43,6 +44,7 @@ align-self:flex-start
 order:1;
 margin-left:10px;
 width:70%;
+
 }
 
 
@@ -51,39 +53,39 @@ width:70%;
 order:3;
 width:auto;
 margin-top:10px;
-margin-right:10px;
+margin-right:60px;
 }
 
 header
 {
 flex-direction:column;
 display:flex;
-
+padding-bottom:30px;
 }
 
 .activ
 {
-margin-right:10px;   
-
-font-size:25px;
-font-weight:bold;
-color:#0065FC;
+margin-right:100px;   
+font-family: 'Raleway';
+font-size:20px;
+font-weight:500;
+color:grey;
 padding-top:5px;
 }
 
 .heberg
 {
-margin-right:10px;   
-font-size:25px;
-font-weight:bold;
-color:#0065FC;
+margin-right:100px;   
+font-size:20px;
+font-weight:normal;
+color:grey;
 padding-top:5px;
 }
 
 .inscription
 {
-    font-size:25px;
-    font-weight:bold;
+    font-size:20px;
+    font-weight:normal;
     color:#0065FC;
     padding-top:5px;
 }
@@ -163,13 +165,13 @@ line-height:15px;
 }
 h1
 {
-    margin-left:10px;
+    margin-left:20px;
 }
 
 
 .slogan p
 {
-margin-left:15px;
+margin-left:25px;
 }
 .search-container
 {
@@ -186,7 +188,7 @@ margin-left:15px;
     border-bottom-right-radius:15px;
     height:50px;
     border-color:grey;
-    margin-left:15px;
+    margin-left:20px;
 
 
 }
@@ -284,7 +286,7 @@ input[type=text]
     margin-right:25px;
     justify-content:left;
     font-size:20px;
-    
+    font-weight:bold;
     margin-bottom:20px;
     
 }
@@ -292,7 +294,7 @@ input[type=text]
 .fa-money-bill-wave
 {
     margin-left:-17px; 
-    background:#6d95eb71;
+    background:#DEEBFF;
     float:left;
     border-radius:100%;
     font-size:20px;
@@ -340,10 +342,10 @@ border-left:none;
 .fa-child
 {
     margin-left:-17px; 
-    background:#6d95eb71;
+    background:#DEEBFF;
     float:left;
     border-radius:100%;
-    font-size:20px;
+    font-size:18px;
     padding:18px 18px 18px;
     color:#0065FC; 
     display:flex;
@@ -360,7 +362,7 @@ border-left:none;
 .fa-dog
 {
     margin-left:-17px; 
-    background:#6d95eb71;
+    background:#DEEBFF;
     float:left;
     border-radius:100%;
     font-size:20px;
@@ -381,7 +383,7 @@ border-left:none;
 {
     
     margin-left:-17px; 
-    background:#6d95eb71;
+    background:#DEEBFF;
     float:left;
     border-radius:100%;
     font-size:20px;
@@ -400,7 +402,9 @@ border-left:none;
 
 
 .text-filtre
-{margin-left:15px;}
+{margin-left:15px;
+font-weight:bold;
+}
 
 
 .info
@@ -423,7 +427,7 @@ margin-left:10px;
 
     
     
-    margin-left:10px; 
+    margin-left:50px; 
     border: solid 1.5px rgba(189, 185, 185, 0.822);
     text-align:center;
     border-radius:100%;
@@ -464,10 +468,10 @@ margin-left:5px;
 {
 display:flex;
 flex-direction:row;
-width:100%;
-
-
-
+width:auto;
+border:1px solid black;
+margin-left:20px;
+margin-right:30px;
 }
 
 
@@ -498,16 +502,16 @@ border-top-right-radius:15px;
 }
 
 #left{
-margin-left:20px;
+margin-left:0px;
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
-width:65%;
+width:60%;
 height:auto;
 align-items:center;
 
 justify-content:center;
-background:#DFE3E7;
+background:#F2F2F2;
 border-radius:15px;
 padding-bottom:50px;
 padding-right:60px;
@@ -538,7 +542,7 @@ margin-left:15px;
 
 #titre
 {
-margin-left:20px;
+margin-left:0px;
 width:100%;
 text-align:left;
 margin-bottom:-30px;
@@ -584,11 +588,11 @@ width:100%;
 
     display:flex;
     flex-direction:column;
-    margin-left:2%;
-    margin-right:10px;
+    margin-left:5%;
+    margin-right:0px;
     width:30%;
     height:auto;
-    background:#DFE3E7;
+    background:#F2F2F2;
     border-radius:15px;
     padding-left:50px;
     padding-right:50px;
@@ -655,13 +659,13 @@ height:100%;
 }
 
 
-#win
+.win
 {
 color:#0065FC;
 
 }
 
-#loose
+.loose
 {
 color:#DFE3E7;
 
@@ -771,7 +775,7 @@ font-size:18px;
 }
 
 
-.footer
+footer
 {
 display:flex;
 flex-direction:row;
@@ -1140,7 +1144,7 @@ width:100%;
 
 }
 
-.footer
+footer
 
 {
 
@@ -1494,7 +1498,7 @@ width:100%;
 object-fit:cover;
 }
 
-.footer
+footer
 
 {
 
